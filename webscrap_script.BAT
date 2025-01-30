@@ -51,6 +51,9 @@ call "%VENV_DIR%\Scripts\activate"
 :: Instalar as dependências
 echo Instalando dependências...
 pip install selenium
+pip install pandas
+python.exe -m pip install --upgrade pip
+
 
 :: Verifique se o ChromeDriver está instalado e instale a partir do arquivo local
 if not exist "%CHROMEDRIVER_DIR%\chromedriver.exe" (
